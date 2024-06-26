@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#upload, #submit, #copyText {
+    margin: 10px 0;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    background-color: #218838;
+}
+
+.steps {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.steps li {
+    margin-bottom: 10px;
+}
+
+.steps .completed {
+    color: #bbb; /* Gray out completed steps */
+    font-weight: normal;
+}
+
+.steps .active {
+    color: green; /* Highlight the active step in green */
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload a Chess Notation Image to Convert to PGN Text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Upload a Chess Notation Image to Convert to PGN Text</h1>
+    <input type="file" id="upload" accept="image/*">
+    <button id="submit">Submit</button>
+    <ul class="steps" id="steps">
+        <li id="step1">1. Uploading Image</li>
+        <li id="step2">2. Encoding Image</li>
+        <li id="step3">3. Sending Request</li>
+        <li id="step4">4. Processing Response</li>
+        <li id="step5">5. Displaying PGN</li>
+    </ul>
+    <div class="loading" id="loading" style="display: none;">Processing, please wait until the PGN is displayed or an error is output...</div>
+    <div id="complete" style="display: none; color: green; font-weight: bold;">Processing Complete</div>
+    <button id="copyText" style="display: none;">Copy Text</button>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
