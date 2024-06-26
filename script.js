@@ -1,4 +1,4 @@
-const apiKey = process.env.REACT_APP_API_KEY;
+const apiKey = process.env.GATSBY_API_KEY;
 
 async function encodeImage(imagePath) {
     updateStep(2);
